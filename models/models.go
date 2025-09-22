@@ -176,7 +176,7 @@ type Transaction struct {
 	Channel             string                 `json:"channel"`
 	Currency            enum.Currency          `json:"currency"`
 	IpAddress           *string                `json:"ip_address"`
-	Metadata            map[string]any         `json:"metadata"`
+	Metadata            any                    `json:"metadata"`
 	Log                 *TransactionLog        `json:"log"`
 	Fees                *int                   `json:"fees"`
 	FeesSplit           any                    `json:"fees_split"`
