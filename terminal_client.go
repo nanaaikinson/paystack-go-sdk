@@ -3,7 +3,7 @@ package paystack
 import (
 	"context"
 	"fmt"
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 	"net/http"
 )
 
@@ -29,15 +29,15 @@ func NewTerminalClient(options ...ClientOptions) *TerminalClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
 //		client := p.NewClient(p.WithSecretKey("<paystack-secret-key>"))
 //
 //		var response models.Response[models.TerminalEventData]
-// 		data := map[string]any{"id": 7895939, "reference": 4634337895939}
+//		data := map[string]any{"id": 7895939, "reference": 4634337895939}
 //		if err := client.Terminals.SendEvent(context.TODO(),"30",event.TerminalEventInvoice,enum.TerminalEventActionProcess,data, &response); err != nil {
 //			panic(err)
 //		}
@@ -64,8 +64,8 @@ func (t *TerminalClient) SendEvent(ctx context.Context, terminalId string, event
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -92,8 +92,8 @@ func (t *TerminalClient) EventStatus(ctx context.Context, terminalId string, eve
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -120,8 +120,8 @@ func (t *TerminalClient) TerminalStatus(ctx context.Context, terminalId string, 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -155,8 +155,8 @@ func (t *TerminalClient) All(ctx context.Context, response any, queries ...Query
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -183,8 +183,8 @@ func (t *TerminalClient) FetchOne(ctx context.Context, terminalId string, respon
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -216,8 +216,8 @@ func (t *TerminalClient) Update(ctx context.Context, terminalId string, name str
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -248,8 +248,8 @@ func (t *TerminalClient) Commission(ctx context.Context, serialNumber string, re
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

@@ -19,7 +19,7 @@ func NewRefundClient(options ...ClientOptions) *RefundClient {
 }
 
 // Create lets you create and manage transaction Refunds.
-// 
+//
 // Default response: models.Response[models.Refund]
 //
 // Example:
@@ -28,9 +28,9 @@ func NewRefundClient(options ...ClientOptions) *RefundClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -46,6 +46,7 @@ func NewRefundClient(options ...ClientOptions) *RefundClient {
 //		// With optional parameters
 //		// err := client.Refunds.Create(context.TODO(),"1641", &response, p.WithOptionalPayload("amount",500000))
 //	}
+//
 // For supported optional parameters, see:
 // https://paystack.com/docs/api/refund/
 func (r *RefundClient) Create(ctx context.Context, transaction string, response any,
@@ -70,8 +71,8 @@ func (r *RefundClient) Create(ctx context.Context, transaction string, response 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -105,8 +106,8 @@ func (r *RefundClient) All(ctx context.Context, response any, queries ...Query) 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // TransactionSplitClient interacts with endpoints related to paystack Transaction Split resource
@@ -22,7 +22,7 @@ func NewTransactionSplitClient(options ...ClientOptions) *TransactionSplitClient
 }
 
 // Create lets you create a split payment on your Integration
-// 
+//
 // Default response: models.Response[models.TransactionSplit]
 //
 // Example:
@@ -31,17 +31,17 @@ func NewTransactionSplitClient(options ...ClientOptions) *TransactionSplitClient
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
 //		client := p.NewClient(p.WithSecretKey("<paystack-secret-key>"))
 //
-// 		subaccounts := []map[string]any{
+//		subaccounts := []map[string]any{
 //			{"subaccount": "ACCT_z3x6z3nbo14xsil", "share": 20},
-// 			{"subaccount": "ACCT_pwwualwty4nhq9d", "share": 80},
-// 		}
+//			{"subaccount": "ACCT_pwwualwty4nhq9d", "share": 80},
+//		}
 //		var response models.Response[models.TransactionSplit]
 //		if err := client.TransactionSplits.Create(context.TODO(),"co-founders account",enum.SplitPercentage,enum.CurrencyNgn,subaccounts, &response); err != nil {
 //			panic(err)
@@ -52,15 +52,15 @@ func NewTransactionSplitClient(options ...ClientOptions) *TransactionSplitClient
 //		// With optional parameters
 //		// err := client.Customers.Create(context.TODO(),"co-founders account",enum.SplitPercentage,enum.CurrencyNgn,subaccounts, &response, p.WithOptionalPayload("bearer_type","all"))
 //	}
-// 
+//
 // For supported optional parameters, see:
 // https://paystack.com/docs/api/split/
 func (t *TransactionSplitClient) Create(ctx context.Context, name string, transactionSplitType enum.Split, currency enum.Currency, subaccounts, response any, optionalPayloads ...OptionalPayload) error {
 	payload := map[string]any{
-		"name":              name,
-		"type":              transactionSplitType,
-		"currency":          currency,
-		"subaccounts":       subaccounts,
+		"name":        name,
+		"type":        transactionSplitType,
+		"currency":    currency,
+		"subaccounts": subaccounts,
 		// "bearer_type":       bearerType, // These fields seem to be optional and should be passed as optional parameters
 		// "bearer_subaccount": bearerSubaccount,
 	}
@@ -81,8 +81,8 @@ func (t *TransactionSplitClient) Create(ctx context.Context, name string, transa
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -116,8 +116,8 @@ func (t *TransactionSplitClient) All(ctx context.Context, response any, queries 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -144,8 +144,8 @@ func (t *TransactionSplitClient) FetchOne(ctx context.Context, id string, respon
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -188,8 +188,8 @@ func (t *TransactionSplitClient) Update(ctx context.Context, id string, name str
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -220,8 +220,8 @@ func (t *TransactionSplitClient) Add(ctx context.Context, id string, subAccount 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

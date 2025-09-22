@@ -30,8 +30,8 @@ func NewTransferClient(options ...ClientOptions) *TransferClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -74,8 +74,8 @@ func (t *TransferClient) Initiate(ctx context.Context, source string, amount int
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -108,14 +108,14 @@ func (t *TransferClient) Finalize(ctx context.Context, transferCode string, otp 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
 //		client := p.NewClient(p.WithSecretKey("<paystack-secret-key>"))
 //
-// 		transfers := []map[string]any{
+//		transfers := []map[string]any{
 //			{"amount": 20000,"reference": "588YtfftReF355894J","reason": "Why not?","recipient":"RCP_2tn9clt23s7qr28"},
 //			{"amount": 30000,"reference": "YunoTReF35e0r4J","reason": "Because I can","recipient":"RCP_1a25w1h3n0xctjg"},
 //			{"amount": 40000,"reason": "Coming right up","recipient": "RCP_aps2aibr69caua7"},
@@ -146,8 +146,8 @@ func (t *TransferClient) BulkInitiate(ctx context.Context, source string, transf
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -181,8 +181,8 @@ func (t *TransferClient) All(ctx context.Context, response any, queries ...Query
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -209,8 +209,8 @@ func (t *TransferClient) FetchOne(ctx context.Context, idOrCode string, response
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

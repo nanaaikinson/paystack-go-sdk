@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // DisputeClient interacts with endpoint related to paystack dispute resource that lets you
@@ -30,8 +30,8 @@ func NewDisputeClient(options ...ClientOptions) *DisputeClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -65,8 +65,8 @@ func (d *DisputeClient) All(ctx context.Context, response any, queries ...Query)
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -93,8 +93,8 @@ func (d *DisputeClient) FetchOne(ctx context.Context, id string, response any) e
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -121,8 +121,8 @@ func (d *DisputeClient) AllTransactionDisputes(ctx context.Context, transactionI
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -162,8 +162,8 @@ func (d *DisputeClient) Update(ctx context.Context, id string, referenceAmount i
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -207,8 +207,8 @@ func (d *DisputeClient) AddEvidence(ctx context.Context, id string, customerEmai
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -242,8 +242,8 @@ func (d *DisputeClient) UploadUrl(ctx context.Context, id string, response any, 
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -287,8 +287,8 @@ func (d *DisputeClient) Resolve(ctx context.Context, id string, resolution enum.
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

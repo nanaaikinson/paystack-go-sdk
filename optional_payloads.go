@@ -10,7 +10,7 @@ type OptionalPayload = func(map[string]any) map[string]any
 // Example
 //
 //	import (
-//		p "github.com/gray-adeyi/paystack"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
 //		"context"
 //	)
 //

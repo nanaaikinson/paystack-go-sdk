@@ -1,4 +1,4 @@
-module github.com/gray-adeyi/paystack
+module github.com/nanaaikinson/paystack-sdk-go
 
 go 1.20
 

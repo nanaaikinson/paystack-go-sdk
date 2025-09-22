@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // MiscellaneousClient interacts with endpoints related to paystack Miscellaneous resource that
@@ -29,8 +29,8 @@ func NewMiscellaneousClient(options ...ClientOptions) *MiscellaneousClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -75,8 +75,8 @@ func (p *MiscellaneousClient) Banks(ctx context.Context, country enum.Country, r
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -103,8 +103,8 @@ func (p *MiscellaneousClient) Countries(ctx context.Context, response any) error
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

@@ -3,28 +3,28 @@ package models
 import (
 	"time"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // Response is a struct containing the status code and data retrieved from paystack.
 type Response[T any] struct {
 	// StatusCode is the http status code returned from making an http request to Paystack
-	StatusCode int 
-	Status     bool   `json:"status"`
-	Message    string `json:"message"`
-	Data T       `json:"data"`
-	Meta *Meta   `json:"meta"`
-	Type *string `json:"type"`
-	Code *string `json:"code"`
-	Raw  []byte
+	StatusCode int
+	Status     bool    `json:"status"`
+	Message    string  `json:"message"`
+	Data       T       `json:"data"`
+	Meta       *Meta   `json:"meta"`
+	Type       *string `json:"type"`
+	Code       *string `json:"code"`
+	Raw        []byte
 }
 
 type Meta struct {
-	Total     int `json:"total"`
-	Skipped   int `json:"skipped"`
-	PerPage  string `json:"perPage"`
-	Page      int `json:"page"`
-	PageCount int `json:"pageCount"`
+	Total     int    `json:"total"`
+	Skipped   int    `json:"skipped"`
+	PerPage   string `json:"perPage"`
+	Page      int    `json:"page"`
+	PageCount int    `json:"pageCount"`
 }
 
 type State struct {

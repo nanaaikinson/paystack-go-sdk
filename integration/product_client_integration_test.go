@@ -1,6 +1,5 @@
 package paystack_test
 
-
 import (
 	"bytes"
 	"context"
@@ -10,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gray-adeyi/paystack/enum"
-	"github.com/gray-adeyi/paystack/models"
 	_ "github.com/joho/godotenv/autoload"
-	p "github.com/gray-adeyi/paystack"
+	p "github.com/nanaaikinson/paystack-sdk-go"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/models"
 )
 
 func TestCanCreateNewProductClient(t *testing.T) {

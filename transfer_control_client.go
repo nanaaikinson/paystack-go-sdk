@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // TransferControlClient interacts with endpoints related to paystack transfer control resource that lets
@@ -29,8 +29,8 @@ func NewTransferControlClient(options ...ClientOptions) *TransferControlClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -57,8 +57,8 @@ func (t *TransferControlClient) Balance(ctx context.Context, response any) error
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -85,9 +85,9 @@ func (t *TransferControlClient) BalanceLedger(ctx context.Context, response any)
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -120,8 +120,8 @@ func (t *TransferControlClient) ResendOtp(ctx context.Context, transferCode stri
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -148,8 +148,8 @@ func (t *TransferControlClient) DisableOtp(ctx context.Context, response any) er
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -177,8 +177,8 @@ func (t *TransferControlClient) FinalizeDisableOtp(ctx context.Context, otp stri
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

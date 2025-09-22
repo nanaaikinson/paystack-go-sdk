@@ -31,7 +31,7 @@ type restClient struct {
 //
 // Example
 //
-//	import p "github.com/gray-adeyi/paystack"
+//	import p "github.com/nanaaikinson/paystack-sdk-go"
 //	client := p.NewAPIClient(p.WithSecretKey("<your-paystack-secret-key>"))
 func WithSecretKey(secretKey string) ClientOptions {
 	return func(client *restClient) {
@@ -151,7 +151,7 @@ func (a *restClient) setHeaders(request *http.Request) error {
 		return ErrNoSecretKey
 	}
 	request.Header.Set("Authorization", fmt.Sprintf("Bearer %s", a.secretKey))
-	request.Header.Set("User-Agent", fmt.Sprintf("github.com/gray-adeyi/paystack version %s", Version))
+	request.Header.Set("User-Agent", fmt.Sprintf("github.com/nanaaikinson/paystack-sdk-go version %s", Version))
 	request.Header.Add("Content-Type", "application/json")
 	return nil
 }

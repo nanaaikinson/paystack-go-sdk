@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-go get -u github.com/gray-adeyi/paystack
+go get -u github.com/nanaaikinson/paystack-sdk-go
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"log"
 
-	p "github.com/gray-adeyi/paystack"
+	p "github.com/nanaaikinson/paystack-sdk-go"
 	"github.com/gray-adeyi/paystack/models"
 )
 
@@ -52,8 +52,8 @@ func main() {
 
 ```go
 import (
-	p "github.com/gray-adeyi/paystack"
-	"github.com/gray-adeyi/paystack/models"
+	p "github.com/nanaaikinson/paystack-sdk-go"
+	"github.com/nanaaikinson/paystack-sdk-go/models"
 )
 ```
 
@@ -65,7 +65,7 @@ import (
 You may also need to import the enum package in some cases:
 
 ```go
-import "github.com/gray-adeyi/paystack/enum"
+import "github.com/nanaaikinson/paystack-sdk-go/enum"
 ```
 
 This is especially useful when a method requires enum values as arguments. For

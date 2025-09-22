@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // PlanClient interacts with endpoints related to paystack plan resource that lets you
@@ -31,9 +31,9 @@ func NewPlanClient(options ...ClientOptions) *PlanClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -49,6 +49,7 @@ func NewPlanClient(options ...ClientOptions) *PlanClient {
 //		// With optional parameters
 //		// err := client.Plans.Create(context.TODO(),"Monthly retainer", 500000, enum.IntervalMonthly, &response, p.WithOptionalPayload("description","a test description"))
 //	}
+//
 // For supported optional parameters, see:
 // https://paystack.com/docs/api/plan/
 func (p *PlanClient) Create(ctx context.Context, name string, amount int, interval enum.Interval, response any, optionalPayloads ...OptionalPayload) error {
@@ -74,8 +75,8 @@ func (p *PlanClient) Create(ctx context.Context, name string, amount int, interv
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -109,8 +110,8 @@ func (p *PlanClient) All(ctx context.Context, response any, queries ...Query) er
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -137,8 +138,8 @@ func (p *PlanClient) FetchOne(ctx context.Context, idOrCode string, response any
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

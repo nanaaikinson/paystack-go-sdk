@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // ProductClient interacts with endpoints related to paystack product resource that allows you to create and
@@ -30,9 +30,9 @@ func NewProductClient(options ...ClientOptions) *ProductClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -48,6 +48,7 @@ func NewProductClient(options ...ClientOptions) *ProductClient {
 //		// With optional parameters
 //		// err := client.Products.Create(context.TODO(),"Puff Puff", "Crispy flour ball with fluffy interior", 5000, enum.CurrencyNgn, &response, p.WithOptionalPayload("unlimited","true"))
 //	}
+//
 // For supported optional parameters, see:
 // https://paystack.com/docs/api/product/
 func (p *ProductClient) Create(ctx context.Context, name string, description string, price int, currency enum.Currency, response any,
@@ -75,8 +76,8 @@ func (p *ProductClient) Create(ctx context.Context, name string, description str
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -110,8 +111,8 @@ func (p *ProductClient) All(ctx context.Context, response any, queries ...Query)
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -138,9 +139,9 @@ func (p *ProductClient) FetchOne(ctx context.Context, id string, response any) e
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {

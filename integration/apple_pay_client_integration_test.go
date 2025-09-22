@@ -1,6 +1,5 @@
 package paystack_test
 
-
 import (
 	"fmt"
 	"os"
@@ -8,9 +7,9 @@ import (
 
 	"context"
 
-	"github.com/gray-adeyi/paystack/models"
 	_ "github.com/joho/godotenv/autoload"
-	p "github.com/gray-adeyi/paystack"
+	p "github.com/nanaaikinson/paystack-sdk-go"
+	"github.com/nanaaikinson/paystack-sdk-go/models"
 )
 
 func TestApplePayClient(t *testing.T) {

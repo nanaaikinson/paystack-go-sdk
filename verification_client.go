@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // VerificationClient interacts with endpoints related to paystack Verification resource
@@ -18,7 +18,7 @@ type VerificationClient struct {
 //
 //	Example
 //
-//	import p "github.com/gray-adeyi/paystack"
+//	import p "github.com/nanaaikinson/paystack-sdk-go"
 //
 //	vClient := p.NewVerificationClient(p.WithSecretKey("<paystack-secret-key>"))
 func NewVerificationClient(options ...ClientOptions) *VerificationClient {
@@ -36,8 +36,8 @@ func NewVerificationClient(options ...ClientOptions) *VerificationClient {
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -65,8 +65,8 @@ func (v *VerificationClient) ResolveAccount(ctx context.Context, response any, q
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -110,8 +110,8 @@ func (v *VerificationClient) ValidateAccount(ctx context.Context, accountName st
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {

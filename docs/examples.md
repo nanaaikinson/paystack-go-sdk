@@ -8,7 +8,7 @@ import (
 		"context"
 		"fmt"
 
-		p "github.com/gray-adeyi/paystack"
+		p "github.com/nanaaikinson/paystack-sdk-go"
 		"github.com/gray-adeyi/paystack/models"
 	)
 

@@ -12,7 +12,7 @@ import (
 //
 //	Example
 //	import (
-//		p "github.com/gray-adeyi/paystack"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
 //		"context"
 //		)
 //
@@ -119,7 +119,7 @@ type PaystackClient struct {
 // NewClient lets you create an APIClient. it can accept zero to many client options
 //
 //	Example
-//	import p "github.com/gray-adeyi/paystack"
+//	import p "github.com/nanaaikinson/paystack-sdk-go"
 //
 //	client := p.NewClient(p.WithSecretKey("<your-paystack-secret-key>"))
 func NewClient(options ...ClientOptions) *PaystackClient {

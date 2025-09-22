@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gray-adeyi/paystack/enum"
+	"github.com/nanaaikinson/paystack-sdk-go/enum"
 )
 
 // TransferRecipientClient interacts with endpoints related to paystack transfer recipient resource
@@ -30,9 +30,9 @@ func NewTransferRecipientClient(options ...ClientOptions) *TransferRecipientClie
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -76,18 +76,18 @@ func (t *TransferRecipientClient) Create(ctx context.Context, recipientType enum
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
 //		client := p.NewClient(p.WithSecretKey("<paystack-secret-key>"))
-//		
-// 		batch := []map[string]any{
+//
+//		batch := []map[string]any{
 //		{"type":"nuban", "name" : "Habenero Mundane", "account_number": "0123456789","bank_code":"033","currency": "NGN"},
 //		{"type":"nuban","name" : "Soft Merry","account_number": "98765432310","bank_code": "50211","currency": "NGN"},
 //		}
-// 
+//
 //		var response models.Response[models.TransferRecipientBulkCreateData]
 //		if err := client.TransferRecipients.BulkCreate(context.TODO(),batch, &response); err != nil {
 //			panic(err)
@@ -114,8 +114,8 @@ func (t *TransferRecipientClient) BulkCreate(ctx context.Context, batch, respons
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -149,8 +149,8 @@ func (t *TransferRecipientClient) All(ctx context.Context, response any, queries
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
@@ -177,9 +177,9 @@ func (t *TransferRecipientClient) FetchOne(ctx context.Context, idOrCode string,
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
-//		"github.com/gray-adeyi/paystack/enum"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
+//		"github.com/nanaaikinson/paystack-sdk-go/enum"
 //	)
 //
 //	func main() {
@@ -220,8 +220,8 @@ func (t *TransferRecipientClient) Update(ctx context.Context, idOrCode string, n
 //		"context"
 //		"fmt"
 //
-//		p "github.com/gray-adeyi/paystack"
-//		"github.com/gray-adeyi/paystack/models"
+//		p "github.com/nanaaikinson/paystack-sdk-go"
+//		"github.com/nanaaikinson/paystack-sdk-go/models"
 //	)
 //
 //	func main() {
